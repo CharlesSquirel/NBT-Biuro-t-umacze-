@@ -1,0 +1,42 @@
+$max-mobile-contact-header: 500px;
+
+.container {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 25px;
+  width: 100%;
+  height: 48px;
+  padding-right: 50px;
+  background: var(--light-gray);
+  @media screen and (max-width: $max-mobile-contact-header) {
+    justify-content: center;
+    gap: 15px;
+    padding: 0;
+  }
+}
+
+.contactBox {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+  &:hover {
+    .icons,
+    .text {
+      opacity: 0.7;
+    }
+  }
+}
+
+.icons {
+  width: 15px;
+  height: 15px;
+}
+
+.text {
+  font-size: 16px;
+  @media screen and (max-width: 500px) {
+    font-size: 15px;
+  }
+}
