@@ -59,3 +59,8 @@ img {
 .active {
   font-weight: 600;
 }
+
+address {
+  width: 100%;
+  font-style: normal;
+}

@@ -1,16 +1,19 @@
 $max-mobile-footer: 800px;
 
 .footer {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 30px;
   padding: 30px 70px;
   background: var(--dark-gray);
   @media screen and (max-width: $max-mobile-footer) {
     padding: 20px 50px;
   }
+}
+
+.address {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
 }
 
 .infoBox {

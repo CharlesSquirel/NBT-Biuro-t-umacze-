@@ -23,34 +23,6 @@ const Trusted: React.FC = () => {
             </div>
           );
         })}
-        {/* <div className={style.imgBox}>
-          <Image width="115" height="115" src={avatarImg} alt="Firma logo" className={style.logo} />
-          <p>Firma A</p>
-        </div>
-        <div className={style.imgBox}>
-          <Image width="115" height="115" src={avatarImg} alt="Firma logo" className={style.logo} />
-          <p>Firma A</p>
-        </div>
-        <div className={style.imgBox}>
-          <Image width="115" height="115" src={avatarImg} alt="Firma logo" className={style.logo} />
-          <p>Firma A</p>
-        </div>
-        <div className={style.imgBox}>
-          <Image width="115" height="115" src={avatarImg} alt="Firma logo" className={style.logo} />
-          <p>Firma A</p>
-        </div>
-        <div className={style.imgBox}>
-          <Image width="115" height="115" src={avatarImg} alt="Firma logo" className={style.logo} />
-          <p>Firma A</p>
-        </div>
-        <div className={style.imgBox}>
-          <Image width="115" height="115" src={avatarImg} alt="Firma logo" className={style.logo} />
-          <p>Firma A</p>
-        </div>
-        <div className={style.imgBox}>
-          <Image width="115" height="115" src={avatarImg} alt="Firma logo" className={style.logo} />
-          <p>Firma A</p>
-        </div> */}
       </section>
     </main>
   );
