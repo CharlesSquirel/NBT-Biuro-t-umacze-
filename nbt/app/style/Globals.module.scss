@@ -60,13 +60,13 @@ $max-mobile-offer: 717px;
 
 .offerBgImg {
   @media screen and (max-width: $max-mobile-offer) {
-    background: url("../public/bg-person.jpg") no-repeat;
+    background: url("/bg-person.jpg") no-repeat;
   }
 }
 
 .aboutBgImg {
   @media screen and (max-width: $max-mobile-offer) {
-    background: url("../public/bg-books.jpg") no-repeat;
+    background: url("/bg-books.jpg") no-repeat;
   }
 }
 
@@ -88,5 +88,20 @@ $max-mobile-offer: 717px;
   }
   @media screen and (max-width: 717px) {
     display: none;
+  }
+}
+
+.notFound {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 795px;
+  font-size: 35px;
+  p:nth-child(2) {
+    font-weight: 600;
+    &:hover {
+      color: var(--red)
+    }
   }
 }

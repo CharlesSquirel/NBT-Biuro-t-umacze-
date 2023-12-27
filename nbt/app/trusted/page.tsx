@@ -1,8 +1,8 @@
-import React from 'react';
-import globalStyle from '../Globals.module.scss';
-import style from './Trusted.module.scss';
-import Image from 'next/image';
-import { trustedContent } from './content';
+import React from "react";
+import globalStyle from "../style/Globals.module.scss";
+import style from "./Trusted.module.scss";
+import Image from "next/image";
+import { trustedContent } from "./content";
 
 const Trusted: React.FC = () => {
   return (
@@ -12,7 +12,13 @@ const Trusted: React.FC = () => {
         {trustedContent?.map((content, index) => {
           return (
             <div className={style.imgBox} key={index}>
-              <Image width="115" height="115" src={content.image} alt={content.alt} className={style.logo} />
+              <Image
+                width="115"
+                height="115"
+                src={content.image}
+                alt={content.alt}
+                className={style.logo}
+              />
               <p>{content.name}</p>
             </div>
           );

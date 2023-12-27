@@ -1,5 +1,3 @@
-import DefaultImg from "./assets/iconProfile.svg"
-
 interface IFirma {
   name: string;
   image: string;
@@ -8,38 +6,38 @@ interface IFirma {
 
 export const trustedContent: IFirma[] = [
   {
-    name: 'Firma A',
-    image: DefaultImg,
-    alt: 'Firma logo',
+    name: "Firma A",
+    image: "/iconProfile.svg",
+    alt: "Firma logo",
   },
   {
-    name: 'Firma A',
-    image: DefaultImg,
-    alt: 'Firma logo',
+    name: "Firma A",
+    image: "/iconProfile.svg",
+    alt: "Firma logo",
   },
   {
-    name: 'Firma A',
-    image: DefaultImg,
-    alt: 'Firma logo',
+    name: "Firma A",
+    image: "/iconProfile.svg",
+    alt: "Firma logo",
   },
   {
-    name: 'Firma A',
-    image: DefaultImg,
-    alt: 'Firma logo',
+    name: "Firma A",
+    image: "/iconProfile.svg",
+    alt: "Firma logo",
   },
   {
-    name: 'Firma A',
-    image: DefaultImg,
-    alt: 'Firma logo',
+    name: "Firma A",
+    image: "/iconProfile.svg",
+    alt: "Firma logo",
   },
   {
-    name: 'Firma A',
-    image: DefaultImg,
-    alt: 'Firma logo',
+    name: "Firma A",
+    image: "/iconProfile.svg",
+    alt: "Firma logo",
   },
   {
-    name: 'Firma A',
-    image: DefaultImg,
-    alt: 'Firma logo',
+    name: "Firma A",
+    image: "/iconProfile.svg",
+    alt: "Firma logo",
   },
 ];
