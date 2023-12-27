@@ -1,0 +1,128 @@
+$max-mobile-header: 717px;
+$max-mobile-logo: 1250px;
+$max-mobile-nav: 976px;
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 140px;
+  padding: 0 70px;
+  background: var(--white);
+  @media screen and (max-width: $max-mobile-logo) {
+    padding: 0 30px;
+  }
+}
+
+.logoContainer {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  height: 100%;
+  @media screen and (max-width: $max-mobile-header) {
+    gap: 20px;
+  }
+}
+
+.textContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  gap: 12px;
+}
+
+.titleContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.title {
+  font-weight: 400;
+  font-size: 20px;
+  @media screen and (max-width: $max-mobile-header) {
+    font-size: 16px;
+  }
+}
+
+.subtitle {
+  font-weight: 400;
+  font-size: 16px;
+  @media screen and (max-width: $max-mobile-header) {
+    display: none;
+  }
+}
+
+.secondarySubtitle {
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.text {
+  @media screen and (max-width: $max-mobile-header) {
+    display: none;
+  }
+}
+
+.logo {
+  width: 110px;
+  height: 79px;
+  cursor: pointer;
+  @media screen and (max-width: $max-mobile-header) {
+    width: 76px;
+    height: 54px;
+  }
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  ul {
+    display: flex;
+    align-items: center;
+    gap: 100px;
+    height: 100%;
+    padding-bottom: 4px;
+    @media screen and (max-width: $max-mobile-logo) {
+      gap: 35px;
+    }
+    @media screen and (max-width: $max-mobile-nav) {
+      display: none;
+    }
+
+    li {
+      cursor: pointer;
+
+      &:hover {
+        opacity: 0.8;
+      }
+    }
+  }
+}
+
+.capitalizeBold {
+  font-weight: 600;
+}
+
+.hamburger {
+  cursor: pointer;
+  display: none;
+  @media screen and (max-width: $max-mobile-nav) {
+    display: block;
+  }
+}
+
+.secondaryMobileContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 30px;
+  background-color: var(--dark-gray);
+  text-align: center;
+  display: none;
+  @media screen and (max-width: $max-mobile-header) {
+    display: flex;
+  }
+}
