@@ -6,23 +6,23 @@ interface IFirma {
 
 export const trustedContent: IFirma[] = [
   {
-    name: "Firma A",
-    image: "/iconProfile.svg",
+    name: "Wydział Artystyczny UMCS",
+    image: "/WAUMCS.jpg",
     alt: "Firma logo",
   },
   {
-    name: "Firma A",
-    image: "/iconProfile.svg",
+    name: "Wydział Pedagogiki i Psychologii UMCS",
+    image: "/WPUMCS.jpg",
     alt: "Firma logo",
   },
   {
-    name: "Firma A",
-    image: "/iconProfile.svg",
+    name: "Wydział Pedagogiki i Psychologii UJK",
+    image: "/UJK.jpg",
     alt: "Firma logo",
   },
   {
-    name: "Firma A",
-    image: "/iconProfile.svg",
+    name: "Wydawnictwo Polihymnia",
+    image: "/polihymnia.png",
     alt: "Firma logo",
   },
   {
