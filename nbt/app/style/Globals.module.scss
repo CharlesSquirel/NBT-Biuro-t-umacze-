@@ -114,3 +114,10 @@ $max-mobile-offer: 717px;
     }
   }
 }
+
+.spinnerContainer {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
