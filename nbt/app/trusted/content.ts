@@ -26,17 +26,17 @@ export const trustedContent: IFirma[] = [
     alt: "Firma logo",
   },
   {
-    name: "Firma A",
+    name: "Ośrodek Międzykulturowych Inicjatyw Twórczych ROZDROŻA",
+    image: "/rozdroza.webp",
+    alt: "Firma logo",
+  },
+  {
+    name: "Politechnika Lubelska",
     image: "/iconProfile.svg",
     alt: "Firma logo",
   },
   {
-    name: "Firma A",
-    image: "/iconProfile.svg",
-    alt: "Firma logo",
-  },
-  {
-    name: "Firma A",
+    name: "Uniwersytet Komisji Edukacji Narodowej w Krakowie",
     image: "/iconProfile.svg",
     alt: "Firma logo",
   },
