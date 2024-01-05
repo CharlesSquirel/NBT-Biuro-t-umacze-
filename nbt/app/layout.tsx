@@ -12,15 +12,11 @@ const poppins = Poppins({
 });
 
 export const metadata: Metadata = {
-  title: "NBT – Nietuzinkowe Biuro Tłumaczeń",
-  description: "Nietuzinkowe Biuro Tłumaczeń",
+  title: "%s - NBT Anna Król Nietuzinkowe Biuro Tłumaczeń",
+  description: "Profesjonalne tłumaczenia z języka angielskiego. Daj sobie przetłumaczyć!",
 };
 
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode;
-}) {
+export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
       <head>
