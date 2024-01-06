@@ -1,0 +1,28 @@
+.contactContainer {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding: 62px 48px 80px 68px;
+  background-color: inherit;
+}
+
+.contentContainer {
+  display: flex;
+}
+
+.contactInfoContainer,
+.formContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.contactInfoContainer {
+  gap: 12px;
+}
+
+.infoGroup {
+  display: flex;
+  flex-direction: column;
+}
