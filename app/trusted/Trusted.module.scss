@@ -28,6 +28,7 @@
   grid-column-gap: 115px;
   grid-row-gap: 155px;
   justify-content: center;
+  overflow: hidden;
   @media screen and (max-width: 1600px) {
     grid-column-gap: 50px;
   }
