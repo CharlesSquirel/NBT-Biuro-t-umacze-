@@ -1,17 +1,20 @@
 import React from "react";
 import styles from "./ContactHeader.module.scss";
+import Image from "next/image";
+import { contactInfo } from "@/app/contactInfo";
 
 const ContactHeader: React.FC = () => {
+  const { phone, email } = contactInfo[0];
   return (
     <header className={styles.container}>
       <div className={styles.contactBox}>
-        <img src="/envelope.svg" alt="Phone icon" className={styles.icons} />
-        <p className={styles.text}>516 169 233</p>
+        <Image src="/envelope.svg" alt="Phone icon" className={styles.icons} width="15" height="15" />
+        <p className={styles.text}>{phone}</p>
       </div>
       <div className={styles.contactBox}>
-        <img src="/phone.svg" alt="Envelope icon" className={styles.icons} />
+        <Image src="/phone.svg" alt="Envelope icon" className={styles.icons} width="15" height="15" />
         <a className={styles.text} href="mailto:nbt.lublin@gmail.com">
-          nbt.lublin@gmail.com
+          {email}
         </a>
       </div>
     </header>

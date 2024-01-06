@@ -1,6 +1,7 @@
-'use client'
+"use client";
 import React, { useState } from "react";
 import style from "./Header.module.scss";
+import globalStyle from "../../style/Globals.module.scss";
 import logoImg from "../../../public/logo.svg";
 import NavDesktop from "../NavDesktop/NavDesktop";
 import NavMobile from "../NavMobile/NavMobile";
@@ -20,7 +21,7 @@ const Header: React.FC = () => {
           <div className={style.textContainer}>
             <div className={style.titleContainer}>
               <h1 className={style.title}>
-                <span className={style.capitalizeBold}>NBT</span> Anna Król
+                <span className={globalStyle.capitalizeBold}>NBT</span> Anna Król
               </h1>
               <h2 className={style.subtitle}>
                 <span className={style.capitalizeBold}>N</span>ietuzinkowe <span className={style.capitalizeBold}>B</span>iuro <span className={style.capitalizeBold}>T</span>łumaczeń Języka

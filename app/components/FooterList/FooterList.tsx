@@ -13,7 +13,7 @@ const FooterList = () => {
           </div>
           <div className={style.infoBox}>
             <p>{`NIP: ${data.nip}`}</p>
-            {/* <p>{`REGON: ${data.regon}`}</p> */}
+            <p>{`REGON: ${data.regon}`}</p>
           </div>
           <div className={style.infoBox}>
             <p>{`tel.: ${data.phone}`}</p>
