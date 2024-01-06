@@ -32,12 +32,12 @@ export const trustedContent: IFirma[] = [
   },
   {
     name: "Politechnika Lubelska",
-    image: "/iconProfile.svg",
+    image: "/politechnika.jpg",
     alt: "Firma logo",
   },
   {
-    name: "Uniwersytet Komisji Edukacji Narodowej w Krakowie",
-    image: "/iconProfile.svg",
+    name: "Uniwersytet Pedagogiczny Komisji Edukacji Narodowej",
+    image: "/uked.png",
     alt: "Firma logo",
   },
 ];

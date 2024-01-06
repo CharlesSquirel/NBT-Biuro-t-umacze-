@@ -48,6 +48,7 @@ body {
   line-height: normal;
   color: var(--black);
   caret-color: transparent;
+  overflow-x: hidden;
 }
 
 img {

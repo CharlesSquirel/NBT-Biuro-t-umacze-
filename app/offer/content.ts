@@ -4,18 +4,15 @@ interface OfferProps {
 
 export const offerContent: OfferProps[] = [
   {
-    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.sed do eiusmod tempor incididunt ut labore et",
+    text: "prawo (umowy prawa cywilnego i handlowego, zaświadczenia, certyfikaty),",
   },
   {
-    text: "dolore magna aliqua. Ut enim ad minim veniam, quis nostrud",
+    text: "biotechnologia (specyfikacje produktów leczniczych/weterynaryjnych, procedury laboratoryjne, instrukcje obsługi wyrobów medycznych, SDS, etc.),",
   },
   {
-    text: "exercitation ullamco laboris nisi ut aliquip ex ea commodo",
+    text: "psychologia",
   },
   {
-    text: "consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa",
-  },
-  {
-    text: "qui officia deserunt mollit anim id est laborum",
+    text: "muzykologia (teksty naukowe, katalogi festiwalowe, programy koncertowe, booklety CD)",
   },
 ];
