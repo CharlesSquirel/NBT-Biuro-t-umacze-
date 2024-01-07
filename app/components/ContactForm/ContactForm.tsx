@@ -3,8 +3,9 @@ import style from "./ContactForm.module.scss";
 import { SubmitHandler, useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
 import { validationSchema } from "@/app/utils/validation";
+import { sendEmail } from "@/app/utils/send-email";
 
-interface FormInput {
+export interface FormInput {
   name: string;
   email: string;
   message: string;
@@ -20,7 +21,7 @@ const ContactForm = () => {
     resolver: yupResolver(validationSchema),
   });
 
-  const onSubmit: SubmitHandler<FormInput> = (data) => console.log(data);
+  const onSubmit: SubmitHandler<FormInput> = (data) => sendEmail(data);
 
   return (
     <form className={style.container} onSubmit={handleSubmit(onSubmit)}>
