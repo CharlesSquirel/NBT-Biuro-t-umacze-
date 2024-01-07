@@ -2,6 +2,7 @@ import { Metadata } from "next";
 import globalStyle from "../style/Globals.module.scss";
 import style from "./Contact.module.scss";
 import ContactInfoBlock from "../components/ContactInfoBlock/ContactInfoBlock";
+import ContactForm from "../components/ContactForm/ContactForm";
 
 export const metadata: Metadata = {
   title: "Kontakt",
@@ -14,7 +15,7 @@ const Contact = () => {
         <h2 className={globalStyle.sectionTitle}>Kontakt</h2>
         <div className={style.contentContainer}>
           <ContactInfoBlock />
-          <div className={style.formContainer}></div>
+          <ContactForm />
         </div>
       </div>
     </main>

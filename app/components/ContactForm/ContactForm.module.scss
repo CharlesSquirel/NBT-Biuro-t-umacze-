@@ -1,0 +1,73 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  width: 100%;
+}
+
+.title {
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--red);
+}
+
+.inputBox {
+  display: flex;
+  flex-direction: column;
+  height: 88px;
+}
+
+.labelHidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+
+.input,
+.textarea {
+  width: 100%;
+  color: var(--firma-icon);
+  background-color: var(--dark-gray);
+  outline: 0;
+  caret-color: var(--firma-icon);
+}
+
+.input {
+  height: 63px;
+  padding-left: 20px;
+}
+
+.errorMessage {
+  font-weight: 600;
+  color: var(--red);
+}
+
+.textareaContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.textarea {
+  height: 253px;
+  padding: 25px 20px;
+  resize: none;
+}
+
+.btn {
+  align-self: flex-end;
+  width: 178px;
+  height: 63px;
+  font-weight: 600;
+  font-size: 16px;
+  background-color: var(--red);
+  color: var(--white);
+  &:hover {
+    opacity: 0.7;
+    transform: translateY(0.5px);
+  }
+}

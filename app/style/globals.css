@@ -27,7 +27,8 @@ ul {
 
 button,
 input,
-a {
+a,
+textarea {
   border: none;
   font-size: inherit;
   font-family: inherit;

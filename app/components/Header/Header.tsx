@@ -23,10 +23,7 @@ const Header: React.FC = () => {
               <h1 className={style.title}>
                 <span className={globalStyle.capitalizeBold}>NBT</span> Anna Król
               </h1>
-              <h2 className={style.subtitle}>
-                <span className={style.capitalizeBold}>N</span>ietuzinkowe <span className={style.capitalizeBold}>B</span>iuro <span className={style.capitalizeBold}>T</span>łumaczeń Języka
-                Angielskiego
-              </h2>
+              <h2 className={style.subtitle}>Biuro Tłumaczeń Języka Angielskiego</h2>
             </div>
             <p className={style.text}>Daj sobie przetłumaczyć!</p>
           </div>
