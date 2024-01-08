@@ -17,48 +17,6 @@
   height: 88px;
 }
 
-.labelHidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  padding: 0;
-  overflow: hidden;
-  clip: rect(0, 0, 0, 0);
-  border: 0;
-}
-
-.input,
-.textarea {
-  width: 100%;
-  color: var(--firma-icon);
-  background-color: var(--dark-gray);
-  outline: 0;
-  caret-color: var(--firma-icon);
-}
-
-.input {
-  height: 63px;
-  padding-left: 20px;
-}
-
-.errorMessage {
-  font-weight: 600;
-  color: var(--red);
-}
-
-.textareaContainer {
-  display: flex;
-  flex-direction: column;
-  height: 278px;
-}
-
-.textarea {
-  height: 253px;
-  padding: 25px 20px;
-  resize: none;
-}
-
 .btn {
   align-self: flex-end;
   width: 178px;

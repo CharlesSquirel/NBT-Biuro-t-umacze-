@@ -130,3 +130,19 @@ $max-mobile-offer: 717px;
 .capitalizeBold {
   font-weight: 600;
 }
+
+.labelHidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+
+.errorMessage {
+  font-weight: 600;
+  color: var(--red);
+}
