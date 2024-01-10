@@ -7,6 +7,7 @@ import NavDesktop from "../NavDesktop/NavDesktop";
 import NavMobile from "../NavMobile/NavMobile";
 import SecondaryMobileHeader from "../SecondaryMobileHeader/SecondaryMobileHeader";
 import Image from "next/image";
+import Link from "next/link";
 
 const Header: React.FC = () => {
   const [isNavMobileOpen, setIsNavMobileOpen] = useState(false);
@@ -17,7 +18,9 @@ const Header: React.FC = () => {
     <>
       <header className={style.container}>
         <div className={style.logoContainer}>
-          <Image src={logoImg} alt="Logo" className={style.logo} />
+          <Link href="/">
+            <Image src={logoImg} alt="Logo" className={style.logo} />
+          </Link>
           <div className={style.textContainer}>
             <div className={style.titleContainer}>
               <h1 className={style.title}>
