@@ -24,3 +24,10 @@
   flex-direction: column;
   height: 278px;
 }
+
+.inputBox {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  min-height: 91px;
+}

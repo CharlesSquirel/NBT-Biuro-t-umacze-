@@ -18,12 +18,16 @@ const ContactForm = () => {
     register,
     handleSubmit,
     formState: { errors },
+    reset,
   } = useForm<FormInput>({
     mode: "all",
     resolver: yupResolver(validationSchema),
   });
 
-  const onSubmit: SubmitHandler<FormInput> = (data) => console.log(data);
+  const onSubmit: SubmitHandler<FormInput> = (data) => {
+    console.log(data);
+    reset();
+  };
   //   sendEmail(data);
 
   return (
