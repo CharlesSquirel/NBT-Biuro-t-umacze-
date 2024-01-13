@@ -29,6 +29,10 @@ const mockedInputs = {
   },
   title: "test",
   message: "test",
+  isPermitted: {
+    valid: true,
+    invalid: false,
+  },
 };
 
 beforeEach(() => {
@@ -46,6 +50,8 @@ it("prevent submitting when all inputs are empty", () => {
     expect(input).toHaveValue("");
   });
 
+  expect(screen.getByRole("checkbox")).not.toBeChecked();
+
   const btnSubmit = screen.getByRole("button", { name: "Prześlij" });
   fireEvent.click(btnSubmit);
 
@@ -55,7 +61,7 @@ it("prevent submitting when all inputs are empty", () => {
 
 it("properly handle required input validation", async () => {
   fireEvent.submit(screen.getByRole("button"));
-  expect(await screen.findAllByRole("alert")).toHaveLength(4);
+  expect(await screen.findAllByRole("alert")).toHaveLength(5);
   expect(mockedSubmit).not.toHaveBeenCalled();
 });
 
@@ -75,8 +81,10 @@ it("should display error when name or email input is invalid", async () => {
     },
   });
 
+  expect(screen.getByRole("checkbox")).not.toBeChecked();
+
   fireEvent.submit(screen.getByRole("button"));
-  expect(await screen.findAllByRole("alert")).toHaveLength(4);
+  expect(await screen.findAllByRole("alert")).toHaveLength(5);
   expect(mockedSubmit).not.toHaveBeenCalled();
   expect(inputName).toHaveValue(mockedInputs.name.invalid);
   expect(inputEmail).toHaveValue(mockedInputs.email.invalid);
@@ -114,6 +122,7 @@ it("should not display any error when all inputs are valid", async () => {
 
     fireEvent.submit(screen.getByRole("button"));
   });
+  fireEvent.click(screen.getByRole("checkbox"));
   expect(screen.queryAllByRole("alert")).toHaveLength(0);
   //   expect(mockedSubmit).toHaveBeenCalledWith({
   //     name: mockedInputs.name.valid,
@@ -125,4 +134,5 @@ it("should not display any error when all inputs are valid", async () => {
   expect(inputEmail).toHaveValue("");
   expect(inputTitle).toHaveValue("");
   expect(inputMessage).toHaveValue("");
+  expect(screen.getByRole("checkbox")).not.toBeChecked();
 });

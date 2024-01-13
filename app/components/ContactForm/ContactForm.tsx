@@ -5,12 +5,14 @@ import { yupResolver } from "@hookform/resolvers/yup";
 import { validationSchema } from "@/app/utils/validation";
 import { sendEmail } from "@/app/utils/send-email";
 import InputText from "../InputText/InputText";
+import FormCheckbox from "../FormCheckbox/FormCheckbox";
 
 export interface FormInput {
   name: string;
   email: string;
   title: string;
   message: string;
+  isPermitted: boolean;
 }
 
 const ContactForm = () => {
@@ -25,7 +27,8 @@ const ContactForm = () => {
   });
 
   const onSubmit: SubmitHandler<FormInput> = (data) => {
-    sendEmail(data);
+    console.log(data);
+    // sendEmail(data);
     reset();
   };
 
@@ -41,6 +44,12 @@ const ContactForm = () => {
         label='Treść wiadomości'
         register={register}
         errors={errors.message}
+      />
+      <FormCheckbox
+        name='isPermitted'
+        label='Wyrażam zgodę'
+        register={register}
+        errors={errors.isPermitted}
       />
       <button type='submit' className={style.btn}>
         Prześlij

@@ -7,4 +7,5 @@ export const validationSchema = Yup.object({
   email: Yup.string().required("To pole jest wymagane").email("Niepoprawny email"),
   title: Yup.string().required("To pole jest wymagane"),
   message: Yup.string().required("To pole jest wymagane"),
+  isPermitted: Yup.boolean().oneOf([true], "Pole jest wymagane").required("To pole jest wymagane"),
 });
