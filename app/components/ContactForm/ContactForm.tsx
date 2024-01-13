@@ -27,17 +27,25 @@ const ContactForm = () => {
   const onSubmit: SubmitHandler<FormInput> = (data) => {
     console.log(data);
     reset();
+    // sendEmail(data);
   };
-  //   sendEmail(data);
 
   return (
     <form className={style.container} onSubmit={handleSubmit(onSubmit)}>
       <h3 className={style.title}>Napisz do mnie!</h3>
-      <InputText name="name" label="Imię" register={register} errors={errors.name} />
-      <InputText name="email" label="Email" register={register} errors={errors.email} />
-      <InputText name="title" label="Tytuł" register={register} errors={errors.title} />
-      <InputText isTextArea name="message" label="Treść wiadomości" register={register} errors={errors.message} />
-      <input type="submit" className={style.btn} />
+      <InputText name='name' label='Imię' register={register} errors={errors.name} />
+      <InputText name='email' label='Email' register={register} errors={errors.email} />
+      <InputText name='title' label='Tytuł' register={register} errors={errors.title} />
+      <InputText
+        isTextArea
+        name='message'
+        label='Treść wiadomości'
+        register={register}
+        errors={errors.message}
+      />
+      <button type='submit' className={style.btn}>
+        Prześlij
+      </button>
     </form>
   );
 };
