@@ -19,13 +19,30 @@ const InputText: React.FC<InputProps> = ({ name, errors, label, register, isText
         {label}
       </label>
       {isTextArea ? (
-        <textarea id={name} className={style.textarea} placeholder={label} {...register(`${name}`)} autoComplete="off"></textarea>
+        <textarea
+          aria-label={label}
+          id={name}
+          className={style.textarea}
+          placeholder={label}
+          {...register(`${name}`)}
+          autoComplete='off'
+        ></textarea>
       ) : (
-        <input type="text" placeholder={label} className={style.input} id={name} {...register(`${name}`)} autoComplete="off" />
+        <input
+          aria-label={label}
+          type='text'
+          placeholder={label}
+          className={style.input}
+          id={name}
+          {...register(`${name}`)}
+          autoComplete='off'
+        />
       )}
-      <p role="alert" className={globalStyle.errorMessage}>
-        {errors?.message}
-      </p>
+      {errors && (
+        <p role='alert' className={globalStyle.errorMessage}>
+          {errors?.message}
+        </p>
+      )}
     </div>
   );
 };
