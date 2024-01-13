@@ -1,14 +1,12 @@
 import "@testing-library/jest-dom";
-import { fireEvent, render, screen, waitFor } from "@testing-library/react";
+import { fireEvent, render, screen } from "@testing-library/react";
 import ContactForm, { FormInput } from "./ContactForm";
 import { sendEmail } from "@/app/utils/send-email";
-import { act } from "react-dom/test-utils";
+
+const mockedSubmit = jest.fn(sendEmail).mockImplementation((data: FormInput) => console.log(data));
 
 it("prevent submitting when all inputs are empty", () => {
   render(<ContactForm />);
-  const mockedSubmit = jest
-    .fn(sendEmail)
-    .mockImplementation((data: FormInput) => console.log(data));
   const inputs = screen.getAllByRole("textbox");
 
   //expect 4 inputs in the form
@@ -26,14 +24,9 @@ it("prevent submitting when all inputs are empty", () => {
   expect(mockedSubmit).not.toHaveBeenCalled();
 });
 
-describe("validation", () => {
+it("properly handle required input validation", async () => {
   render(<ContactForm />);
-  const mockedSubmit = jest
-    .fn(sendEmail)
-    .mockImplementation((data: FormInput) => console.log(data));
-  it("properly handle required input validation", async () => {
-    fireEvent.submit(screen.getByRole("button"));
-    expect(await screen.findAllByRole("alert")).toHaveLength(4);
-    expect(mockedSubmit).not.toHaveBeenCalled();
-  });
+  fireEvent.submit(screen.getByRole("button"));
+  expect(await screen.findAllByRole("alert")).toHaveLength(4);
+  expect(mockedSubmit).not.toHaveBeenCalled();
 });
