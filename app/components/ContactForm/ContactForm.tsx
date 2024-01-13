@@ -25,9 +25,8 @@ const ContactForm = () => {
   });
 
   const onSubmit: SubmitHandler<FormInput> = (data) => {
-    console.log(data);
+    sendEmail(data);
     reset();
-    // sendEmail(data);
   };
 
   return (
