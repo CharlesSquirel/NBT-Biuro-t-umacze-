@@ -13,7 +13,12 @@ const Footer: React.FC = () => {
           </div>
           <FooterList />
         </div>
-        <p className={style.freepikInfo}>Wszystkie zdjęcia wykorzystane na stronie pochodzą z Freepik.com</p>
+        <div className={style.subfooter}>
+          <a href="/" className={style.privacy}>
+            Polityka prywatności
+          </a>
+          <p className={style.freepikInfo}>Wszystkie zdjęcia wykorzystane na stronie pochodzą z Freepik.com</p>
+        </div>
       </address>
     </footer>
   );

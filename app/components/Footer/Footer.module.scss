@@ -14,6 +14,9 @@ $max-mobile-footer: 800px;
   justify-content: center;
   align-items: center;
   gap: 30px;
+  @media screen and (max-width: $max-mobile-footer) {
+    gap: 15px;
+  }
 }
 
 .infoBox {
@@ -41,8 +44,21 @@ $max-mobile-footer: 800px;
 
 .freepikInfo {
   font-size: 12px;
-  align-self: flex-end;
   @media screen and (max-width: $max-mobile-footer) {
     display: none;
+  }
+}
+
+.privacy {
+  font-size: 12px;
+}
+
+.subfooter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  @media screen and (max-width: $max-mobile-footer) {
+    justify-content: center;
   }
 }
