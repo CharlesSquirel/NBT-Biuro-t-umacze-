@@ -1,10 +1,8 @@
-import React, { Suspense } from "react";
-import globalStyle from "../style/Globals.module.scss";
+import globalStyle from "style/Globals.module.scss";
 import style from "./Trusted.module.scss";
 import { Metadata } from "next";
-import TrustedList from "../components/TrustedList/TrustedList";
-import Spinner from "../components/Spinner/Spinner";
-import SuspenseSpinner from "../components/SuspenseSpinner/SuspenseSpinner";
+import TrustedList from "@/components/TrustedList/TrustedList";
+import SuspenseSpinner from "@/components/SuspenseSpinner/SuspenseSpinner";
 
 export const metadata: Metadata = {
   title: "Zaufali mi",

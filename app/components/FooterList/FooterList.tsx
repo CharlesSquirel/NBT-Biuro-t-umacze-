@@ -1,6 +1,5 @@
-import { contactInfo } from "@/app/contactInfo";
-import style from "../Footer/Footer.module.scss";
-import React from "react";
+import { contactInfo } from "contactInfo";
+import style from "@/components/Footer/Footer.module.scss";
 
 const FooterList = () => {
   return (

@@ -1,8 +1,7 @@
 "use client";
 import { FieldError } from "react-hook-form";
-import globalStyle from "../../style/Globals.module.scss";
+import globalStyle from "style/Globals.module.scss";
 import style from "./InputText.module.scss";
-import React from "react";
 
 interface InputProps {
   name: string;

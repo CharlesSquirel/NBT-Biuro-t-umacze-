@@ -1,5 +1,5 @@
-import Spinner from "./components/Spinner/Spinner";
-import globalStyle from "./style/Globals.module.scss";
+import Spinner from "@/components/Spinner/Spinner";
+import globalStyle from "style/Globals.module.scss";
 
 export default function Loading() {
   return (

@@ -1,5 +1,4 @@
-import React from "react";
-import globalStyle from "./style/Globals.module.scss";
+import globalStyle from "style/Globals.module.scss";
 import Image from "next/image";
 import type { Metadata } from "next";
 

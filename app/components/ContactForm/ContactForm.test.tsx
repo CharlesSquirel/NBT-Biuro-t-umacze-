@@ -1,7 +1,7 @@
 import "@testing-library/jest-dom";
 import { fireEvent, render, screen, waitFor } from "@testing-library/react";
 import ContactForm, { FormInput } from "./ContactForm";
-import { sendEmail } from "@/app/utils/send-email";
+import { sendEmail } from "utils/send-email";
 
 // Mock the entire module
 jest.mock("../../utils/send-email");

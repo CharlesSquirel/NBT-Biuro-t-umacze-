@@ -2,10 +2,10 @@
 import style from "./ContactForm.module.scss";
 import { SubmitHandler, useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
-import { validationSchema } from "@/app/utils/validation";
-import { sendEmail } from "@/app/utils/send-email";
-import InputText from "../InputText/InputText";
-import FormCheckbox from "../FormCheckbox/FormCheckbox";
+import { validationSchema } from "utils/validation";
+import { sendEmail } from "utils/send-email";
+import InputText from "@/components/InputText/InputText";
+import FormCheckbox from "@/components/FormCheckbox/FormCheckbox";
 
 export interface FormInput {
   name: string;

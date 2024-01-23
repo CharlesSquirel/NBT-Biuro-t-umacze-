@@ -1,4 +1,3 @@
-import React from "react";
 import style from "./Spinner.module.scss";
 import HalfLogo from "./HalfLogo";
 

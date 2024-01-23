@@ -1,7 +1,7 @@
 import styles from "./ContactHeader.module.scss";
 import Image from "next/image";
-import { contactInfo } from "@/app/contactInfo";
-import { clearEmptySpace } from "@/app/utils/clearEmptySpace";
+import { contactInfo } from "contactInfo";
+import { clearEmptySpace } from "utils/clearEmptySpace";
 
 const ContactHeader: React.FC = () => {
   const { phone, email } = contactInfo[0];

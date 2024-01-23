@@ -1,5 +1,5 @@
 import Link from "next/link";
-import globalStyles from "./style/Globals.module.scss";
+import globalStyles from "style/Globals.module.scss";
 
 const NotFound: React.FC = () => {
   return (
