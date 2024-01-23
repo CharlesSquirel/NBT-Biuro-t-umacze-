@@ -1,11 +1,11 @@
 "use client";
-import React, { useState } from "react";
+import { useState } from "react";
 import style from "./Header.module.scss";
-import globalStyle from "../../style/Globals.module.scss";
+import globalStyle from "style/Globals.module.scss";
 import logoImg from "../../../public/logo.svg";
-import NavDesktop from "../NavDesktop/NavDesktop";
-import NavMobile from "../NavMobile/NavMobile";
-import SecondaryMobileHeader from "../SecondaryMobileHeader/SecondaryMobileHeader";
+import NavDesktop from "@/components/NavDesktop/NavDesktop";
+import NavMobile from "@/components/NavMobile/NavMobile";
+import SecondaryMobileHeader from "@/components/SecondaryMobileHeader/SecondaryMobileHeader";
 import Image from "next/image";
 import Link from "next/link";
 

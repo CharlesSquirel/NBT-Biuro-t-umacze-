@@ -1,9 +1,9 @@
 import { Metadata } from "next";
-import globalStyle from "../style/Globals.module.scss";
+import globalStyle from "style/Globals.module.scss";
 import style from "./Contact.module.scss";
-import ContactInfoBlock from "../components/ContactInfoBlock/ContactInfoBlock";
-import ContactForm from "../components/ContactForm/ContactForm";
-import SuspenseSpinner from "../components/SuspenseSpinner/SuspenseSpinner";
+import ContactInfoBlock from "@/components/ContactInfoBlock/ContactInfoBlock";
+import ContactForm from "@/components/ContactForm/ContactForm";
+import SuspenseSpinner from "@/components/SuspenseSpinner/SuspenseSpinner";
 
 export const metadata: Metadata = {
   title: "Kontakt",

@@ -1,8 +1,8 @@
-import globalStyle from "../style/Globals.module.scss";
+import globalStyle from "style/Globals.module.scss";
 import Image from "next/image";
 import { Metadata } from "next";
-import OfferList from "../components/OfferList/OfferList";
-import SuspenseSpinner from "../components/SuspenseSpinner/SuspenseSpinner";
+import OfferList from "@/components/OfferList/OfferList";
+import SuspenseSpinner from "@/components/SuspenseSpinner/SuspenseSpinner";
 
 export const metadata: Metadata = {
   title: "Oferta",

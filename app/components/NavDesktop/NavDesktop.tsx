@@ -1,6 +1,5 @@
 "use client";
-import React from "react";
-import style from "../Header/Header.module.scss";
+import style from "@/components/Header/Header.module.scss";
 import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
@@ -29,7 +28,7 @@ const NavDesktop: React.FC<Props> = ({ onClick }) => {
         </li>
         <li>
           <Link
-            href="/offer"
+            href="/oferta"
             className={`${pathname === "/offer" ? "active" : ""}`}
           >
             Oferta
@@ -37,7 +36,7 @@ const NavDesktop: React.FC<Props> = ({ onClick }) => {
         </li>
         <li>
           <Link
-            href="/trusted"
+            href="/zaufali"
             className={`${pathname === "/trusted" ? "active" : ""}`}
           >
             Zaufali mi
@@ -45,7 +44,7 @@ const NavDesktop: React.FC<Props> = ({ onClick }) => {
         </li>
         <li>
           <Link
-            href="/contact"
+            href="/kontakt"
             className={`${pathname === "/contact" ? "active" : ""}`}
           >
             Kontakt

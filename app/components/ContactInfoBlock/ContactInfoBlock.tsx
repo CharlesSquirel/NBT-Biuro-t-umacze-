@@ -1,6 +1,6 @@
-import { contactInfo } from "@/app/contactInfo";
-import style from "../../contact/Contact.module.scss";
-import globalStyle from "../../style/Globals.module.scss";
+import { contactInfo } from "contactInfo";
+import style from "kontakt/Contact.module.scss";
+import globalStyle from "style/Globals.module.scss";
 
 const ContactInfoBlock = () => {
   const { addressPrimary, addressSecondary, nip, regon, phone, email } = contactInfo[0];

@@ -1,6 +1,5 @@
-import React from "react";
-import style from "../Header/Header.module.scss";
-import globalStyle from "../../style/Globals.module.scss";
+import style from "@/components/Header/Header.module.scss";
+import globalStyle from "style/Globals.module.scss";
 
 const SecondaryMobileHeader: React.FC = () => {
   return (

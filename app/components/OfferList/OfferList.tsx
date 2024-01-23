@@ -1,5 +1,5 @@
-import { offerContent } from "@/app/offer/content";
-import globalStyle from "../../style/Globals.module.scss";
+import { offerContent } from "oferta/content";
+import globalStyle from "style/Globals.module.scss";
 
 const OfferList = () => {
   return (
