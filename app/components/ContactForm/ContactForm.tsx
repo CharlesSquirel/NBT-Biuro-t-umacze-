@@ -6,6 +6,8 @@ import { validationSchema } from "utils/validation";
 import { sendEmail } from "utils/send-email";
 import InputText from "@/components/InputText/InputText";
 import FormCheckbox from "@/components/FormCheckbox/FormCheckbox";
+import ModalEmail from "../ModalEmail/ModalEmail";
+import { useState } from "react";
 
 export interface FormInput {
   name: string;
@@ -26,7 +28,14 @@ const ContactForm = () => {
     resolver: yupResolver(validationSchema),
   });
 
+  const [showModal, setShowModal] = useState(false);
+
+  const handleShowModal = () => {
+    setShowModal(!showModal);
+  };
+
   const onSubmit: SubmitHandler<FormInput> = (data) => {
+    handleShowModal();
     console.log(data);
     // sendEmail(data);
     reset();
@@ -54,6 +63,7 @@ const ContactForm = () => {
       <button type='submit' className={style.btn}>
         Prześlij
       </button>
+      {showModal && <ModalEmail onClose={handleShowModal} />}
     </form>
   );
 };

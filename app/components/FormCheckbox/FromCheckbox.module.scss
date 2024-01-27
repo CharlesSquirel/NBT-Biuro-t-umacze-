@@ -12,3 +12,11 @@
 .privacyInfo {
   font-size: 14px;
 }
+
+.checkbox {
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  background-color: var(--white);
+  border: 0.5px solid var(--black);
+}
