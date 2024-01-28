@@ -1,13 +1,13 @@
 "use client";
-import style from "./ContactForm.module.scss";
+import { useState } from "react";
 import { SubmitHandler, useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
-import { validationSchema } from "utils/validation";
-import { sendEmail } from "utils/send-email";
+import style from "./ContactForm.module.scss";
 import InputText from "@/components/InputText/InputText";
 import FormCheckbox from "@/components/FormCheckbox/FormCheckbox";
 import ModalEmail from "../ModalEmail/ModalEmail";
-import { useState } from "react";
+import { validationSchema } from "utils/validation";
+import { sendEmail } from "utils/send-email";
 import { useEscapeClick } from "utils/hooks/useEscapeClick";
 
 export interface FormInput {

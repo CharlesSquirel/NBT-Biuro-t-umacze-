@@ -1,5 +1,5 @@
-import Square from "./Square";
 import style from "./Spinner.module.scss";
+import Square from "./Square";
 
 const HalfLogo: React.FC = () => {
   return (

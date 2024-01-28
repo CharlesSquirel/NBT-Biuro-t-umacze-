@@ -1,7 +1,7 @@
 import Image from "next/image";
+import Link from "next/link";
 import style from "./NavMobile.module.scss";
 import globalStyle from "style/Globals.module.scss";
-import Link from "next/link";
 import closeImg from "../../../public/close.svg";
 
 interface Props {
