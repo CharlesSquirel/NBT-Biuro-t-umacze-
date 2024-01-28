@@ -35,7 +35,7 @@ const ContactForm = () => {
     setShowModal(!showModal);
   };
 
-  useEscapeClick(handleShowModal);
+  useEscapeClick(() => setShowModal(false));
 
   const onSubmit: SubmitHandler<FormInput> = (data) => {
     handleShowModal();
