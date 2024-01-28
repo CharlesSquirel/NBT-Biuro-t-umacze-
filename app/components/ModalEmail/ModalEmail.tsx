@@ -6,8 +6,10 @@ interface IModalEmail {
 
 const ModalEmail = ({ onClose }: IModalEmail) => {
   return (
-    <div className={style.container}>
-      <p className={style.message}>Pomyślnie wysłano wiadomość</p>
+    <div className={style.container} role='dialog' aria-modal='true' aria-labelledby='message'>
+      <p className={style.message} id='message'>
+        Pomyślnie wysłano wiadomość
+      </p>
       <button className={style.btn} onClick={onClose}>
         OK
       </button>

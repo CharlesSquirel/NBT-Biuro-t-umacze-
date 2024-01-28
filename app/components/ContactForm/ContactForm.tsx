@@ -8,6 +8,7 @@ import InputText from "@/components/InputText/InputText";
 import FormCheckbox from "@/components/FormCheckbox/FormCheckbox";
 import ModalEmail from "../ModalEmail/ModalEmail";
 import { useState } from "react";
+import { useEscapeClick } from "utils/hooks/useEscapeClick";
 
 export interface FormInput {
   name: string;
@@ -28,11 +29,13 @@ const ContactForm = () => {
     resolver: yupResolver(validationSchema),
   });
 
-  const [showModal, setShowModal] = useState(false);
+  const [showModal, setShowModal] = useState(true);
 
   const handleShowModal = () => {
     setShowModal(!showModal);
   };
+
+  useEscapeClick(handleShowModal);
 
   const onSubmit: SubmitHandler<FormInput> = (data) => {
     handleShowModal();
