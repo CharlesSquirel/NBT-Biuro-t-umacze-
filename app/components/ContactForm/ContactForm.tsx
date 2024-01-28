@@ -29,7 +29,7 @@ const ContactForm = () => {
     resolver: yupResolver(validationSchema),
   });
 
-  const [showModal, setShowModal] = useState(true);
+  const [showModal, setShowModal] = useState(false);
 
   const handleShowModal = () => {
     setShowModal(!showModal);

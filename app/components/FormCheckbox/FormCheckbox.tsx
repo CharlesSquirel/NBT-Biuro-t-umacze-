@@ -18,6 +18,7 @@ const FormCheckbox: React.FC<CheckboxProps> = ({ name, label, register, errors }
           type='checkbox'
           id={name}
           aria-labelledby='Wyrażenie zgody na przetwarzanie danych osobowych'
+          aria-describedby='description'
           {...register("isPermitted")}
         />
         <label htmlFor={name}>{label}</label>
@@ -27,7 +28,7 @@ const FormCheckbox: React.FC<CheckboxProps> = ({ name, label, register, errors }
           </p>
         )}
       </div>
-      <p className={style.privacyInfo}>
+      <p className={style.privacyInfo} id='description'>
         na przetwarzanie moich danych osobowych zgodnie z ustawą o ochronie danych osobowych w
         związku z wysłaniem zapytania przez formularz kontaktowy. Podanie danych jest dobrowolne,
         ale niezbędne do przetworzenia zapytania. Oświadczam, że zostałem/am poinformowany/a, że
