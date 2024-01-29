@@ -1,5 +1,5 @@
 "use client";
-import { useState } from "react";
+import { useRef, useState } from "react";
 import { SubmitHandler, useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
 import style from "./ContactForm.module.scss";
@@ -9,6 +9,7 @@ import ModalEmail from "../ModalEmail/ModalEmail";
 import { validationSchema } from "utils/validation";
 import { sendEmail } from "utils/send-email";
 import { useEscapeClick } from "utils/hooks/useEscapeClick";
+import ReCAPTCHA from "react-google-recaptcha";
 
 export interface FormInput {
   name: string;
@@ -28,6 +29,8 @@ const ContactForm = () => {
     mode: "all",
     resolver: yupResolver(validationSchema),
   });
+
+  const recaptchaRef = useRef<ReCAPTCHA>(null);
 
   const [showModal, setShowModal] = useState(false);
 
