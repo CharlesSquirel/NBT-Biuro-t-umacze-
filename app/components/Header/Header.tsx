@@ -1,13 +1,13 @@
 "use client";
 import { useState } from "react";
+import Image from "next/image";
+import Link from "next/link";
 import style from "./Header.module.scss";
 import globalStyle from "style/Globals.module.scss";
-import logoImg from "../../../public/logo.svg";
 import NavDesktop from "@/components/NavDesktop/NavDesktop";
 import NavMobile from "@/components/NavMobile/NavMobile";
 import SecondaryMobileHeader from "@/components/SecondaryMobileHeader/SecondaryMobileHeader";
-import Image from "next/image";
-import Link from "next/link";
+import logoImg from "../../../public/logo.svg";
 
 const Header: React.FC = () => {
   const [isNavMobileOpen, setIsNavMobileOpen] = useState(false);
@@ -18,8 +18,8 @@ const Header: React.FC = () => {
     <>
       <header className={style.container}>
         <div className={style.logoContainer}>
-          <Link href="/">
-            <Image src={logoImg} alt="Logo" className={style.logo} />
+          <Link href='/'>
+            <Image src={logoImg} alt='Logo' className={style.logo} />
           </Link>
           <div className={style.textContainer}>
             <div className={style.titleContainer}>

@@ -7,13 +7,12 @@ $max-mobile-offer: 717px;
   z-index: 1;
 }
 
-$max-mobile-offer: 717px;
-
 .container {
   display: flex;
   position: relative;
   width: 100%;
   min-height: 795px;
+
   @media screen and (max-width: $max-mobile-offer) {
     min-height: 736px;
   }
@@ -36,6 +35,7 @@ $max-mobile-offer: 717px;
     line-height: 1.6;
     z-index: 1;
   }
+
   @media screen and (min-width: 1440px) {
     width: 65%;
   }
@@ -58,7 +58,7 @@ $max-mobile-offer: 717px;
       left: 0;
       width: 100%;
       height: 100%;
-      background-color: #ffffffb8;
+      background-color: var(--img-blur);
     }
   }
 }
@@ -66,12 +66,14 @@ $max-mobile-offer: 717px;
 .offerBgImg {
   @media screen and (max-width: $max-mobile-offer) {
     background: url("/bg-person.jpg") no-repeat;
+    background-size: cover;
   }
 }
 
 .aboutBgImg {
   @media screen and (max-width: $max-mobile-offer) {
     background: url("/bg-books.jpg") no-repeat;
+    background-size: cover;
   }
 }
 
@@ -144,4 +146,15 @@ $max-mobile-offer: 717px;
 
 .errorMessage {
   color: var(--red);
+}
+
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--dark-gray);
+  opacity: 0.5;
+  z-index: 1;
 }

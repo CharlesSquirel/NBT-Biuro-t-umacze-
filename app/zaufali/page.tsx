@@ -1,6 +1,6 @@
+import { Metadata } from "next";
 import globalStyle from "style/Globals.module.scss";
 import style from "./Trusted.module.scss";
-import { Metadata } from "next";
 import TrustedList from "@/components/TrustedList/TrustedList";
 import SuspenseSpinner from "@/components/SuspenseSpinner/SuspenseSpinner";
 

@@ -1,5 +1,5 @@
-import { contactInfo } from "contactInfo";
 import style from "@/components/Footer/Footer.module.scss";
+import { contactInfo } from "contactInfo";
 
 const FooterList = () => {
   return (
