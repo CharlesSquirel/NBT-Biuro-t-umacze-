@@ -8,4 +8,5 @@ export const validationSchema = Yup.object({
   title: Yup.string().required("To pole jest wymagane"),
   message: Yup.string().required("To pole jest wymagane"),
   isPermitted: Yup.boolean().oneOf([true], "Pole jest wymagane").required("To pole jest wymagane"),
+  captcha: Yup.string()
 });

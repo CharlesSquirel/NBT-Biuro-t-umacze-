@@ -1,5 +1,5 @@
 import { FieldError } from "react-hook-form";
-import style from "./FromCheckbox.module.scss";
+import style from "./FormCheckbox.module.scss";
 import globalStyle from "style/Globals.module.scss";
 
 interface CheckboxProps {

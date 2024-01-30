@@ -11,7 +11,6 @@ export const validateCaptcha = async (captcha: string) => {
     if (!response.ok) {
       throw new Error("Server returnes" + response.status);
     }
-
     const captchaValidation = await response.json();
     return captchaValidation;
   } catch (error) {
