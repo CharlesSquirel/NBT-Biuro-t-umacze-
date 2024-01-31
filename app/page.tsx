@@ -32,7 +32,7 @@ const About: React.FC = () => {
         </p>
       </div>
       <div className={globalStyle.backgroundImg}>
-        <Image src='/bg-books.jpg' alt='Person with books' width='748' height='794' />
+        <Image src='/bg-books.webp' alt='Person with books' width='748' height='794' />
       </div>
     </main>
   );
