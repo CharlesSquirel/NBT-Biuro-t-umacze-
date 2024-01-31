@@ -18,7 +18,7 @@ const Offer: React.FC = () => {
         </SuspenseSpinner>
       </div>
       <div className={globalStyle.backgroundImg}>
-        <Image src="/bg-person.jpg" alt="Person at office desk" width="748" height="794" />
+        <Image src="/bg-person.webp" alt="Person at office desk" width="748" height="794" />
       </div>
     </main>
   );

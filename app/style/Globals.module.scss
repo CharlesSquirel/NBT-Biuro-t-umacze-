@@ -65,14 +65,14 @@ $max-mobile-offer: 717px;
 
 .offerBgImg {
   @media screen and (max-width: $max-mobile-offer) {
-    background: url("/bg-person.jpg") no-repeat;
+    background: url("/bg-person.webp") no-repeat;
     background-size: cover;
   }
 }
 
 .aboutBgImg {
   @media screen and (max-width: $max-mobile-offer) {
-    background: url("/bg-books.jpg") no-repeat;
+    background: url("/bg-books.webp") no-repeat;
     background-size: cover;
   }
 }
