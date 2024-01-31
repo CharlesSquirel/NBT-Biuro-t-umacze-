@@ -8,6 +8,9 @@ $max-mobile: "717px";
   gap: 30px;
   padding: 62px 48px 80px 68px;
   background-color: var(--light-gray);
+  @media screen and (max-width: $max-mobile) {
+    padding: 26px 30px;
+  }
 }
 
 .contentContainer {
