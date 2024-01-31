@@ -1,3 +1,5 @@
+$max-mobile: "717px";
+
 .contactContainer {
   width: 100%;
   height: 100%;
@@ -11,6 +13,10 @@
 .contentContainer {
   display: flex;
   gap: 50px;
+
+  @media screen and (max-width: $max-mobile) {
+    flex-direction: column;
+  }
 }
 
 .contactInfoContainer,
