@@ -11,11 +11,17 @@ const poppins = Poppins({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://nbt-biuro-t-umacze.vercel.app/"),
   title: {
     template: "%s - NBT Anna Król Nietuzinkowe Biuro Tłumaczeń",
     default: "NBT Anna Król Nietuzinkowe Biuro Tłumaczeń",
   },
   description: "Profesjonalne tłumaczenia z języka angielskiego. Daj sobie przetłumaczyć!",
+  openGraph: {
+    title: "%s - NBT Anna Król Nietuzinkowe Biuro Tłumaczeń",
+    description: "Profesjonalne tłumaczenia z języka angielskiego. Daj sobie przetłumaczyć!",
+    images: "/opengraph-image.jpg",
+  },
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
