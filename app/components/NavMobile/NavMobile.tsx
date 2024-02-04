@@ -20,10 +20,10 @@ const NavMobile: React.FC<Props> = ({ onClick }) => {
       <ul>
         <li id='menu'>Menu</li>
         <li>
-          <Link href='/'>O mnie</Link>
+          <Link href='/o_mnie'>O mnie</Link>
         </li>
         <li>
-          <Link href='/oferta'>Oferta</Link>
+          <Link href='/'>Oferta</Link>
         </li>
         <li>
           <Link href='/zaufali'>Zaufali mi</Link>

@@ -1,6 +1,6 @@
 import Image from "next/image";
 import style from "zaufali/Trusted.module.scss";
-import { trustedContent } from "zaufali/content";
+import { trustedContent } from "data/trusted";
 
 const TrustedList = () => {
   return (
