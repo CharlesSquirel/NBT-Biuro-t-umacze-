@@ -1,4 +1,4 @@
-import { contactInfo } from "contactInfo";
+import { contactInfo } from "data/contactInfo";
 import style from "kontakt/Contact.module.scss";
 import globalStyle from "style/Globals.module.scss";
 
