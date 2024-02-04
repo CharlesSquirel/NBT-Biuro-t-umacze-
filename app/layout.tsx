@@ -21,6 +21,9 @@ export const metadata: Metadata = {
     title: "%s - NBT Anna Król Nietuzinkowe Biuro Tłumaczeń",
     description: "Profesjonalne tłumaczenia z języka angielskiego. Daj sobie przetłumaczyć!",
     images: "/opengraph-image.jpg",
+    url: "https://nbt-biuro-t-umacze.vercel.app/",
+    siteName: "NBT",
+    type: "website",
   },
 };
 
