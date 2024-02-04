@@ -1,4 +1,4 @@
-import { offerContent } from "oferta/content";
+import { offerContent } from "../../content";
 import globalStyle from "style/Globals.module.scss";
 
 const OfferList = () => {
@@ -11,8 +11,10 @@ const OfferList = () => {
         ))}
       </ul>
       <p>
-        <span className={globalStyle.capitalizeBold}>Uwaga:</span> Strona rozliczeniowa tłumaczenia to 1800 znaków ze spacjami. Opłata naliczana jest za każdą rozpoczętą stronę. Ceny ustalane są
-        indywidualnie w zależności od tematyki tłumaczenia, jego trudności, wielkości zlecenia oraz terminu wykonania tłumaczenia.
+        <span className={globalStyle.capitalizeBold}>Uwaga:</span> Strona rozliczeniowa tłumaczenia
+        to 1800 znaków ze spacjami. Opłata naliczana jest za każdą rozpoczętą stronę. Ceny ustalane
+        są indywidualnie w zależności od tematyki tłumaczenia, jego trudności, wielkości zlecenia
+        oraz terminu wykonania tłumaczenia.
       </p>
     </>
   );

@@ -13,40 +13,31 @@ const NavDesktop: React.FC<Props> = ({ onClick }) => {
   return (
     <nav className={style.nav}>
       <Image
-        src="./hamburger.svg"
-        width="36"
-        height="18"
-        alt="Hamburger logo"
+        src='./hamburger.svg'
+        width='36'
+        height='18'
+        alt='Hamburger logo'
         className={style.hamburger}
         onClick={onClick}
       />
       <ul>
         <li>
-          <Link href="/" className={`${pathname === "/" ? "active" : ""}`}>
+          <Link href='/o_mnie' className={`${pathname === "/o_mnie" ? "active" : ""}`}>
             O mnie
           </Link>
         </li>
         <li>
-          <Link
-            href="/oferta"
-            className={`${pathname === "/offer" ? "active" : ""}`}
-          >
+          <Link href='/' className={`${pathname === "/" ? "active" : ""}`}>
             Oferta
           </Link>
         </li>
         <li>
-          <Link
-            href="/zaufali"
-            className={`${pathname === "/trusted" ? "active" : ""}`}
-          >
+          <Link href='/zaufali' className={`${pathname === "/trusted" ? "active" : ""}`}>
             Zaufali mi
           </Link>
         </li>
         <li>
-          <Link
-            href="/kontakt"
-            className={`${pathname === "/contact" ? "active" : ""}`}
-          >
+          <Link href='/kontakt' className={`${pathname === "/contact" ? "active" : ""}`}>
             Kontakt
           </Link>
         </li>
