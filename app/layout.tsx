@@ -20,7 +20,13 @@ export const metadata: Metadata = {
   openGraph: {
     title: "%s - NBT Anna Król Nietuzinkowe Biuro Tłumaczeń",
     description: "Profesjonalne tłumaczenia z języka angielskiego. Daj sobie przetłumaczyć!",
-    images: "../public/opengraph-image.jpg",
+    images: [
+      {
+        url: "../public/opengraph-image.jpg",
+        width: 1200,
+        height: 600,
+      },
+    ],
     url: "https://nbt-biuro-t-umacze.vercel.app/",
     siteName: "NBT",
     type: "website",
