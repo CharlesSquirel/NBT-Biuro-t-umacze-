@@ -11,7 +11,7 @@ const poppins = Poppins({
 });
 
 export const metadata: Metadata = {
-  // metadataBase: new URL("https://nbt-biuro-t-umacze.vercel.app/"),
+  metadataBase: new URL("https://nbt-biuro-t-umacze.vercel.app/"),
   title: {
     template: "%s - NBT Anna Król Nietuzinkowe Biuro Tłumaczeń",
     default: "NBT Anna Król Nietuzinkowe Biuro Tłumaczeń",
