@@ -58,9 +58,8 @@ const ContactForm = () => {
         return;
       }
       else {
-
+        sendEmail(data)
         handleShowModal();
-        console.log(data);
         reset();
       }
 
