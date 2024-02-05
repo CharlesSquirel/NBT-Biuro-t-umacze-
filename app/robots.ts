@@ -6,6 +6,6 @@ export default function robots(): MetadataRoute.Robots {
       userAgent: "*",
       allow: "/",
     },
-    sitemap: "https://localhost:3000/sitemap.xml",
+    sitemap: "https://nbt.lublin.pl/sitemap.xml",
   };
 }
