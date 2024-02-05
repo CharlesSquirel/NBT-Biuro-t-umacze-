@@ -11,7 +11,7 @@ const poppins = Poppins({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://nbt-biuro-t-umacze.vercel.app/"),
+  metadataBase: new URL("https://nbt.lublin.pl/"),
   title: {
     template: "%s - NBT Anna Król Nietuzinkowe Biuro Tłumaczeń",
     default: "NBT Anna Król Nietuzinkowe Biuro Tłumaczeń",
@@ -27,7 +27,7 @@ export const metadata: Metadata = {
         height: 600,
       },
     ],
-    url: "https://nbt-biuro-t-umacze.vercel.app/",
+    url: "https://nbt.lublin.pl/",
     siteName: "NBT",
     type: "website",
   },
