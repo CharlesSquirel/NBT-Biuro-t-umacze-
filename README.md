@@ -1,7 +1,5 @@
 # NBT Nietuzinkowe Biuro Tłumaczeń
 
-![Next.js Logo](https://simpleicons.org/icons/nextdotjs.svg)
-
 This is a minimalist website - a business card for a person providing translation services from English.
 
 ## Description
