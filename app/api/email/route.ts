@@ -1,7 +1,7 @@
-import { NextRequest, NextResponse } from 'next/server';
-import nodemailer from 'nodemailer';
-import Mail from 'nodemailer/lib/mailer';
-import { validateCaptcha } from 'utils/validateCaptcha';
+import { NextRequest, NextResponse } from "next/server";
+import nodemailer from "nodemailer";
+import Mail from "nodemailer/lib/mailer";
+import { validateCaptcha } from "utils/validateCaptcha";
 
 export async function POST(request: NextRequest) {
   try {
@@ -9,11 +9,14 @@ export async function POST(request: NextRequest) {
     const validatedCaptcha = await validateCaptcha(captcha);
 
     if (!validatedCaptcha.success) {
-      return NextResponse.json({ error: 'Nieprawidłowa captcha' }, { status: 400 });
+      return NextResponse.json(
+        { error: "Nieprawidłowa captcha" },
+        { status: 400 }
+      );
     }
 
     const transport = nodemailer.createTransport({
-      service: 'gmail',
+      service: "gmail",
       auth: {
         user: process.env.MY_EMAIL,
         pass: process.env.MY_PASSWORD,
@@ -27,19 +30,19 @@ export async function POST(request: NextRequest) {
       text: message,
     };
 
-    // const sendMailPromise = () =>
-    //   new Promise<string>((resolve, reject) => {
-    //     transport.sendMail(mailOptions, function (err) {
-    //       if (!err) {
-    //         resolve("Email sent");
-    //       } else {
-    //         reject(err.message);
-    //       }
-    //     });
-    //   });
+    const sendMailPromise = () =>
+      new Promise<string>((resolve, reject) => {
+        transport.sendMail(mailOptions, function (err) {
+          if (!err) {
+            resolve("Email sent");
+          } else {
+            reject(err.message);
+          }
+        });
+      });
 
-    // await sendMailPromise();
-    return NextResponse.json({ message: 'Email sent' });
+    await sendMailPromise();
+    return NextResponse.json({ message: "Email sent" });
   } catch (err) {
     return NextResponse.json({ error: err }, { status: 500 });
   }

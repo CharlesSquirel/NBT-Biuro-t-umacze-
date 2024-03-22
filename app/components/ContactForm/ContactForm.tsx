@@ -1,15 +1,15 @@
-'use client';
-import { useRef, useState } from 'react';
-import { SubmitHandler, useForm } from 'react-hook-form';
-import { yupResolver } from '@hookform/resolvers/yup';
-import style from './ContactForm.module.scss';
-import InputText from '@/components/InputText/InputText';
-import FormCheckbox from '@/components/FormCheckbox/FormCheckbox';
-import ModalEmail from '../ModalEmail/ModalEmail';
-import { validationSchema } from 'utils/validation';
-import { sendEmail } from 'utils/send-email';
-import { useEscapeClick } from 'utils/hooks/useEscapeClick';
-import ReCAPTCHA from 'react-google-recaptcha';
+"use client";
+import { useRef, useState } from "react";
+import { SubmitHandler, useForm } from "react-hook-form";
+import { yupResolver } from "@hookform/resolvers/yup";
+import style from "./ContactForm.module.scss";
+import InputText from "@/components/InputText/InputText";
+import FormCheckbox from "@/components/FormCheckbox/FormCheckbox";
+import ModalEmail from "../ModalEmail/ModalEmail";
+import { validationSchema } from "utils/validation";
+import { sendEmail } from "utils/send-email";
+import { useEscapeClick } from "utils/hooks/useEscapeClick";
+import ReCAPTCHA from "react-google-recaptcha";
 
 export interface FormInput {
   name: string;
@@ -28,7 +28,7 @@ const ContactForm = () => {
     reset,
     setValue,
   } = useForm<FormInput>({
-    mode: 'all',
+    mode: "all",
     resolver: yupResolver(validationSchema),
   });
 
@@ -47,22 +47,20 @@ const ContactForm = () => {
       const captcha = await recaptchaRef.current?.executeAsync();
 
       if (captcha) {
-        await setValue('captcha', captcha);
+        await setValue("captcha", captcha);
       }
 
       const response = await sendEmail(data);
-      
+
       // zatrzymanie kodu, gdyby backend rzucił blędem
       if (!response.success) {
-        console.log("zatrzymanie")
+        console.log("zatrzymanie");
         return;
-      }
-      else {
-        sendEmail(data)
+      } else {
+        sendEmail(data);
         handleShowModal();
         reset();
       }
-
     } catch (error: any) {
       console.log(error.message);
     }
@@ -71,13 +69,43 @@ const ContactForm = () => {
   return (
     <form className={style.container} onSubmit={handleSubmit(onSubmit)}>
       <h3 className={style.title}>Napisz do mnie!</h3>
-      <InputText name="name" label="Imię" register={register} errors={errors.name} />
-      <InputText name="email" label="Email" register={register} errors={errors.email} />
-      <InputText name="title" label="Tytuł" register={register} errors={errors.title} />
-      <InputText isTextArea name="message" label="Treść wiadomości" register={register} errors={errors.message} />
-      <FormCheckbox name="isPermitted" label="Wyrażam zgodę" register={register} errors={errors.isPermitted} />
-      <ReCAPTCHA ref={recaptchaRef} size="invisible" sitekey={process.env.NEXT_PUBLIC_RECAPTCHA!} />
-      <button type="submit" className={style.btn}>
+      <InputText
+        name='name'
+        label='Imię'
+        register={register}
+        errors={errors.name}
+      />
+      <InputText
+        name='email'
+        label='Email'
+        register={register}
+        errors={errors.email}
+      />
+      <InputText
+        name='title'
+        label='Tytuł'
+        register={register}
+        errors={errors.title}
+      />
+      <InputText
+        isTextArea
+        name='message'
+        label='Treść wiadomości'
+        register={register}
+        errors={errors.message}
+      />
+      <FormCheckbox
+        name='isPermitted'
+        label='Wyrażam zgodę'
+        register={register}
+        errors={errors.isPermitted}
+      />
+      <ReCAPTCHA
+        ref={recaptchaRef}
+        size='invisible'
+        sitekey={process.env.NEXT_PUBLIC_RECAPTCHA!}
+      />
+      <button type='submit' className={style.btn}>
         Prześlij
       </button>
       {showModal && <ModalEmail onClose={handleShowModal} />}
