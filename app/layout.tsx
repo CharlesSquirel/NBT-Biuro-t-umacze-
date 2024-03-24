@@ -38,6 +38,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     <html lang='en'>
       <head>
         <link rel='shortcut icon' href='favicon.ico' type='image/x-icon' />
+        <meta name="google-site-verification" content="flyxXLj5Lu50dHysxVDVUG-ThlJffiGu3M_qxAED8co" />
       </head>
       <body className={poppins.className}>
         <>
