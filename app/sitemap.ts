@@ -3,16 +3,16 @@ import { MetadataRoute } from "next";
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   return [
     {
-      url: "/",
+      url: "https://nbt.lublin.pl",
     },
     {
-      url: "/zaufali",
+      url: "https://nbt.lublin.pl/zaufali",
     },
     {
-      url: "/o_mnie",
+      url: "https://nbt.lublin.pl/o_mnie",
     },
     {
-      url: "/kontakt",
+      url: "https://nbt.lublin.pl/kontakt",
     },
   ];
 }
