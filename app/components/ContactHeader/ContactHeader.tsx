@@ -9,7 +9,7 @@ const ContactHeader: React.FC = () => {
     <header className={styles.container}>
       <div className={styles.contactBox}>
         <Image
-          src='/envelope.svg'
+          src='/phone.svg'
           alt='Phone icon'
           className={styles.icons}
           width='15'
@@ -21,7 +21,7 @@ const ContactHeader: React.FC = () => {
       </div>
       <div className={styles.contactBox}>
         <Image
-          src='/phone.svg'
+          src='/envelope.svg'
           alt='Envelope icon'
           className={styles.icons}
           width='15'
