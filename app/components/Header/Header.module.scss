@@ -65,7 +65,7 @@ $max-mobile-nav: 976px;
 }
 
 .logo {
-  width: 110px;
+  width: 270px;
   height: 79px;
   cursor: pointer;
   @media screen and (max-width: $max-mobile-header) {
@@ -87,7 +87,7 @@ $max-mobile-nav: 976px;
     @media screen and (max-width: $max-mobile-logo) {
       gap: 35px;
     }
-    @media screen and (max-width: $max-mobile-nav) {
+    @media screen and (max-width: 1080px) {
       display: none;
     }
 
@@ -104,7 +104,7 @@ $max-mobile-nav: 976px;
 .hamburger {
   cursor: pointer;
   display: none;
-  @media screen and (max-width: $max-mobile-nav) {
+  @media screen and (max-width: 1080px) {
     display: block;
   }
 }

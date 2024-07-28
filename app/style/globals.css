@@ -9,7 +9,7 @@
 :root {
   --black: #000;
   --light-gray: #d9d9d93b;
-  --red: #ff0000;
+  --red: #ee4a62;
   --dark-gray: #d9d9d9;
   --white: #fff;
   --firma-icon: #5c5c5c;
@@ -44,7 +44,7 @@ a {
 
 body {
   width: 100vw;
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: normal;
