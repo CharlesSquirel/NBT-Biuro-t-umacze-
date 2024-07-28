@@ -40,6 +40,7 @@ $max-mobile-nav: 976px;
 .title {
   font-weight: 400;
   font-size: 20px;
+  visibility: hidden;
   @media screen and (max-width: $max-mobile-header) {
     font-size: 16px;
   }
@@ -48,6 +49,7 @@ $max-mobile-nav: 976px;
 .subtitle {
   font-weight: 400;
   font-size: 16px;
+  visibility: hidden;
   @media screen and (max-width: $max-mobile-header) {
     display: none;
   }
@@ -59,6 +61,10 @@ $max-mobile-nav: 976px;
 }
 
 .text {
+  padding-bottom: 74px;
+  @media screen and (max-width: 800px) {
+    padding-bottom: 100px;
+  }
   @media screen and (max-width: $max-mobile-header) {
     display: none;
   }
@@ -69,7 +75,7 @@ $max-mobile-nav: 976px;
   height: 79px;
   cursor: pointer;
   @media screen and (max-width: $max-mobile-header) {
-    width: 76px;
+    width: 177px;
     height: 54px;
   }
 }
@@ -84,6 +90,9 @@ $max-mobile-nav: 976px;
     gap: 100px;
     height: 100%;
     padding-bottom: 4px;
+    @media screen and (max-width: 1292px) {
+      gap: 80px;
+    }
     @media screen and (max-width: $max-mobile-logo) {
       gap: 35px;
     }
