@@ -1,5 +1,18 @@
 $max-mobile-contact-header: 500px;
 $max-mini-mobile: 400px;
+// $max-mobile-header: 717px;
+// $max-mobile-logo: 1250px;
+// $max-mobile-nav: 976px;
+
+// .text {
+//   padding-bottom: 74px;
+//   @media screen and (max-width: 800px) {
+//     padding-bottom: 100px;
+//   }
+//   @media screen and (max-width: $max-mobile-header) {
+//     display: none;
+//   }
+// }
 
 .container {
   display: flex;
@@ -33,6 +46,13 @@ $max-mini-mobile: 400px;
 .icons {
   width: 15px;
   height: 15px;
+}
+
+.textSlogan {
+  display: block;
+  @media screen and (max-width: 735px) {
+    display: none;
+  }
 }
 
 .text {

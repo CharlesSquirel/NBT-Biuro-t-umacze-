@@ -68,9 +68,6 @@ const Header: React.FC = () => {
                 Angielskiego
               </h2>
             </div>
-            <p className={style.text}>
-              Daj sobie przetłumaczyć!
-            </p>
           </div>
         </div>
         <NavDesktop
