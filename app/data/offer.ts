@@ -13,6 +13,6 @@ export const offerContent: OfferProps[] = [
     text: "psychologia",
   },
   {
-    text: "muzykologia (teksty naukowe, katalogi festiwalowe, programy koncertowe, booklety CD)",
+    text: "muzykologia i sztuka w przestrzeni publicznej (teksty naukowe, katalogi festiwalowe, programy koncertowe, booklety CD)",
   },
 ];
