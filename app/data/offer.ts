@@ -10,7 +10,7 @@ export const offerContent: OfferProps[] = [
     text: "biotechnologia (specyfikacje produktów leczniczych/weterynaryjnych, procedury laboratoryjne, instrukcje obsługi wyrobów medycznych, SDS, PIL etc.),",
   },
   {
-    text: "psychologia",
+    text: "psychologia (artykuły naukowe)",
   },
   {
     text: "muzykologia i sztuka w przestrzeni publicznej (teksty naukowe, katalogi festiwalowe, programy koncertowe, booklety CD)",
